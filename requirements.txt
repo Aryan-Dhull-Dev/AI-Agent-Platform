@@ -9,3 +9,7 @@ alembic==1.13.3
 psycopg2-binary==2.9.12
 pydantic-settings==2.6.0
 greenlet>=3.0.0
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.12
+pydantic[email]==2.9.2

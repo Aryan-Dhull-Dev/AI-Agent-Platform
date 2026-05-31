@@ -1,9 +1,15 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from sqlalchemy import text
+import os
 
+# Import DB setup
 from app.db.session import engine, Base
+from app.db.models import User, ChatSession, Message, AgentExecution 
+
+# Import routers
 from app.api.chat import router as chat_router
+from app.api.auth import router as auth_router 
 
 
 @asynccontextmanager
@@ -24,7 +30,7 @@ app = FastAPI(
 )
 
 app.include_router(chat_router)
-
+app.include_router(auth_router)
 
 @app.get("/health")
 async def health_check():
