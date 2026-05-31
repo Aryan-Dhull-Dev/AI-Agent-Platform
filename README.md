@@ -391,15 +391,6 @@ LIMIT 10;
 
 ## 🚧 Roadmap
 
-### Week 2 (In Progress)
-- [x] Day 8: GCP Fundamentals
-- [ ] Day 9: Deploy to Cloud Run
-- [ ] Day 10: Cloud SQL Setup
-- [ ] Day 11: Observability (logging, monitoring)
-- [ ] Day 12: Advanced MCP Tools
-- [ ] Day 13: AI Engineering Features
-- [ ] Day 14: Polish + Resume + GitHub Actions
-
 ### Stretch Goals
 - Redis queues + Celery workers
 - RAG with vector search (pgvector)
