@@ -59,7 +59,7 @@ async def login(credentials: UserLogin, db: AsyncSession = Depends(get_db)):
         )
     
     # Create access token
-    access_token = create_access_token(data={"sub": user.id})
+    access_token = create_access_token(data={"sub": str(user.id)})
     
     # Create default chat session for new user
     result = await db.execute(select(ChatSession).where(ChatSession.user_id == user.id))

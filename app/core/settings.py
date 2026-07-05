@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     HOST: str = "0.0.0.0"
     PORT: int = 8000
     APP_ENV: str = "local"
+    SECRET_KEY: str = "your-secret-key-change-in-production"
 
     class Config:
         extra = "ignore"

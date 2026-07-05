@@ -14,7 +14,7 @@ from app.schemas import ChatRequest, ChatResponse
 from app.core.auth import get_current_user 
 from app.services.ai_service import AIService
 from app.services.prompt_manager import PromptManager
-from fastapi import StreamingResponse
+from fastapi.responses import StreamingResponse
 
 router = APIRouter(prefix="/api", tags=["chat"])
 
